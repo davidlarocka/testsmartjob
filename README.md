@@ -18,11 +18,34 @@
 
 ## Realizar peticiones ## 
 - En una app para realizar peticiones Http (como postman) hacer el siguiente llamado: 
-> http://localhost:8080/registro
+> [!NOTE]
+http://localhost:8080/registro
 
+- con la siguiente data en el body, en formato Json:
+
+```
+{
+  "name": "Juan Rodriguez",
+  "email": "juan@rodriguez.org",
+  "password": "hunter2",
+  "phones": [
+    {
+      "number": "1234567",
+      "citycode": "1",
+      "contrycode": "57"
+    },
+    {
+      "number": "123456733",
+      "citycode": "1",
+      "contrycode": "57"
+    }
+  ]
+}
+```
 
 ## ver datos en base de datos ## 
-- una ver guad
+- una ver creado el usuario, se puede visualizar en modo desarrollo enla consola web de h2 desde el navegador accediendo a la siguiente ruta
+> http://localhost:8080/h2-console
 
 ##Pruebas integrales##
 
@@ -33,3 +56,6 @@
 
 
 ## Diagrama de la solución ##
+
+![image](https://github.com/davidlarocka/testsmartjob/assets/1700287/38547282-1870-4528-a12a-002af93ad9be)
+
