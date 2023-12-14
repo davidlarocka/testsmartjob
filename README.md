@@ -15,7 +15,7 @@
 - 1. Levantar project con un IDE para Java (Eclipse, intellij, SpringToolSuite4)
 - 2. Levantar Servidor embebido en Spring boot web. Para eso debemos ir sobre el proyecto en "package explorer" haciendo click  en  "Run > Run As > Spring boot App"
 ![image](https://github.com/davidlarocka/testsmartjob/assets/1700287/097d3ea1-c6d0-4e8a-9da4-e5ca4fd5bd70)
-
+- 3. Al levantar la aplicación la BD se creará en memoria con lo mapeado en las clases del modelo. No es necesario hacer un restore. 
 ## Realizar peticiones ## 
 - En una app para realizar peticiones Http (como postman) hacer el siguiente llamado: 
 > [!NOTE]
