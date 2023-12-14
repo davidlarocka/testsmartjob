@@ -1,4 +1,4 @@
-package com.prueba.bcitest;
+package com.prueba.bcitest.service;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import org.junit.jupiter.api.Order;
