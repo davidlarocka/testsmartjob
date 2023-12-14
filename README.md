@@ -1,4 +1,4 @@
-# testsmartjob
+# Test Java Smartjob #
 
 ## Requerimientos: ##
 ### Spring boot 3.2.0 ###
@@ -43,17 +43,24 @@ http://localhost:8080/registro
 }
 ```
 
-## ver datos en base de datos ## 
+## Ver datos en base de datos ## 
 - una ver creado el usuario, se puede visualizar en modo desarrollo enla consola web de h2 desde el navegador accediendo a la siguiente ruta
 > http://localhost:8080/h2-console
 
-##Pruebas integrales##
+![image](https://github.com/davidlarocka/testsmartjob/assets/1700287/48d1499a-1c94-41ef-a2ec-1192f01158ee)
+
+- El usuario y la clave para acceder a la BD se encuentran configurados en el application.properties de la app
+
+## Pruebas integrales ##
 
 -Spring boot test
 -JUnit
 
 ![image](https://github.com/davidlarocka/testsmartjob/assets/1700287/9d308bf0-e535-4aa9-a962-accb4754488c)
 
+- test1_create_simple_user_successfull_with_correctData: Se espera que cree el usuario cuando los datos son correctos
+- test2_no_create_Simple_user_with_email_is_used_by_otheruser : Se espera que NO cree el usuario cuando ya existe un email registrado en BD por otro usuario
+- test3_no_create_simple_user_fail_with_incorrectdata_email_no_format : Se espera que NO cree el usuario cuando el dato enviado en la petición para email no tiene un formato admitido. 
 
 ## Diagrama de la solución ##
 
